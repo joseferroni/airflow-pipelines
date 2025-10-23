@@ -15,9 +15,13 @@ El primer DAG del proyecto se llama `mover_archivos_excel_sql_ventas` y realiza 
 
 ### Estructura de archivos relacionada:
 ├── dags/
+
 │ └── etl_ventas.py # DAG principal
+
 ├── .env # Variables de entorno (no esta cargado en el repo)
+
 ├── docker-compose.yml # Configuración de Airflow y servicios
+
 └── README.md
 
 ## Configuración
