@@ -40,7 +40,6 @@ def importar_a_mysql():
 
                     # Leer Excel
                     df = pd.read_excel(ruta_archivo)
-                    df['fecha_str']=
 
                     # Importar a MySQL
                     df.to_sql(tabla, con=engine, if_exists='append', index=False)
@@ -117,3 +116,4 @@ with DAG(
     )
 
     cargar_mysql >> enviar_error 
+
