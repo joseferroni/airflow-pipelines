@@ -59,7 +59,7 @@ def enviar_mail_error(**context):
     task_id = ti.task_id if ti else 'desconocido'
     timestamp = context.get('ts', 'desconocido')
 
-    # Obtener excepción completa
+    
     
     exc = context.get('exception')
     if exc:
@@ -116,4 +116,5 @@ with DAG(
     )
 
     cargar_mysql >> enviar_error 
+
 
